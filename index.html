@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>School Club Information</title>
+    <style>
+        /* ... (CSS Styles remain the same) ... */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(https://i.pinimg.com/originals/49/cd/d8/49cdd838e8c6d7fe5e2dd55deead5567.gif);
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #835c96; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000000;
+            text-align: center;
+            border-bottom: 2px solid #0e24a3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #c1c2af;
+            box-sizing: border-box;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .action-buttons button {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        #show-info-button {
+            background-color: #3a6996;
+            color: rgb(221, 214, 180);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #show-info-button:hover {
+            background-color: #2a0ae059;
+        }
+        #refresh-button {
+            background-color: #000000;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #refresh-button:hover {
+            background-color: #19347c;
+        }
+
+        #club-info {
+            border: 1px solid #5570acd7;
+            padding: 15px;
+            background-color: #575899;
+            border-left: 5px solid #c4c1b6;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⋆.𝜗𝜚˚⋆𝑺𝒄𝒉𝒐𝒐𝒍 𝑪𝒍𝒖𝒃 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏⋆.𝜗𝜚˚⋆</h1>
+        
+        <label for="club-select">𝚂𝚎𝚕𝚎𝚌𝚝 𝚊 𝚌𝚕𝚞𝚋˗ˏˋ ♡ ˎˊ˗:</label>
+        <select id="club-select">
+            <option value="Art Club">-ˋˏ ༻ ❁ ✿𝓐𝓻𝓽 𝓒𝓵𝓾𝓫˚❀༺ ˎˊ-</option>
+            <option value="Glee Club">♫⋆｡♪ ₊˚♬ ﾟ.𝓖𝓵𝓮𝓮 𝓒𝓵𝓾𝓫♫⋆｡♪ ₊˚♬ ﾟ.</option>
+            <option value="Dance Club">𝘿𝙖𝙣𝙘𝙚 𝘾𝙡𝙪𝙗♪┏(・o･)┛♪</option>
+            <option value="ComArts"> 𝜗𝜚 ࣪˖ ִ𐙚 CσɱAɾƚʂ 𝜗𝜚 ࣪˖ ִ𐙚 </option>
+            <option value="COCC">── .✦𝑪𝑶𝑪𝑪── .✦</option>
+        </select>
+        
+        <div class="action-buttons">
+            <button id="show-info-button">𝕊𝕙𝕠𝕨 ℂ𝕝𝕦𝕓 𝕀𝕟𝕗𝕠𝕣𝕞𝕒𝕥𝕚𝕠𝕟</button>
+            
+            <button id="refresh-button" onclick="window.location.reload()">ℝ𝕖𝕗𝕣𝕖𝕤𝕙</button>
+        </div>
+        
+        <pre>
+            <div id="club-info">𝚂𝚎𝚕𝚎𝚌𝚝 𝚊 𝚌𝚕𝚞𝚋 𝚊𝚗𝚍 𝚌𝚕𝚒𝚌𝚔 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗 𝚝𝚘 𝚜𝚎𝚎 𝚝𝚑𝚎 𝚍𝚎𝚝𝚊𝚒𝚕𝚜.˗ˏˋ ♡ ˎˊ˗</div>
+        </pre>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
